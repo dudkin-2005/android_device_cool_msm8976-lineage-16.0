@@ -842,14 +842,17 @@
 
     <path name="speaker">
         <ctl name="RX2 MIX1 INP1" value="RX2" />
+		<ctl name="RX3 MIX1 INP1" value="RX1" />
+		<ctl name="SPK" value="Switch" />
         <ctl name="RDAC2 MUX" value="RX2" />
         <ctl name="RX2 Digital Volume" value="84" />
+		<ctl name="RX1 Digital Volume" value="90" />
         <ctl name="EAR PA Gain" value="POS_6_DB" />
+        <ctl name="HPHL" value="Switch" />
         <ctl name="HPHR" value="Switch" />
-        <ctl name="Set AW87xx Mode" value="MODE_DEFAULT" />
         <ctl name="Ext Spk Switch" value="On" />
     </path>
-
+   
     <path name="speaker-test">
        <ctl name="RX2 MIX1 INP1" value="RX2" />
        <ctl name="RDAC2 MUX" value="RX2" />
@@ -975,14 +978,8 @@
         <path name="handset" />
     </path>
 
-    <path name="voice-speaker">
-        <ctl name="RX2 MIX1 INP1" value="RX2" />
-        <ctl name="RDAC2 MUX" value="RX2" />
-        <ctl name="RX2 Digital Volume" value="84" />
-        <ctl name="EAR PA Gain" value="POS_6_DB" />
-        <ctl name="HPHR" value="Switch" />
-        <ctl name="Set AW87xx Mode" value="MODE_DEFAULT" />
-        <ctl name="Ext Spk Switch" value="On" />
+   <path name="voice-speaker">
+        <path name="speaker" />
     </path>
 
     <path name="wsa-voice-speaker">
